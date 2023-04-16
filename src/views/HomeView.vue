@@ -65,7 +65,7 @@ function fetchForecast() {
   </div>
   <div v-else class="mt-3">
     <div class="p-fluid flex flex-row flex-wrap justify-content-evenly">
-      <Card v-for="forecastday in allWeatherInfo" :key="forecastday.date" class="w-20rem mb-6 mx-3">
+      <Card v-for="forecastday in allWeatherInfo" :key="forecastday.date" class="w-22rem mb-6 mx-3">
         <template #title>
           <img style="width: 64px" :alt="forecastday.description" :src="forecastday.icon" />
           {{ forecastday.date }}, {{ forecastday.temperature }} C<sup><small>o</small></sup>
